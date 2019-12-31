@@ -68,6 +68,23 @@ public class Principal {
             System.out.println();
 
         }
+        ArrayList<Balinable> balines = new ArrayList<Balinable>();
+        balines.add(harley);
+
+        for (Balinable balin:balines){
+            balin.doBalin();
+            System.out.println();
+
+        }
+
+        ArrayList<Laserable> laser = new ArrayList<Laserable>();
+        laser.add(speedfigther);
+
+        for (Laserable laserr:laser){
+            laserr.doLaser();
+            System.out.println();
+
+        }
 
     }
 }
