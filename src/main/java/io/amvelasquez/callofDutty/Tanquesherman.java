@@ -1,6 +1,6 @@
 package io.amvelasquez.callofDutty;
 
-public class Tanquesherman extends Vehiculo implements Atacable, Rafagable, Bombardeable {
+public class Tanquesherman extends Vehiculo implements Atacable, Rafagable {
 
     public int capacidadPasajeros = 5;
     public int capacidadTonelaCarga = 20;
@@ -25,11 +25,6 @@ public class Tanquesherman extends Vehiculo implements Atacable, Rafagable, Bomb
 
     }
 
-    public void doBombardear() {
-
-        System.out.println("Bombardeando Atacando desde un tanque de guerra sherman");
-
-    }
 
     public void doRafaga() {
 

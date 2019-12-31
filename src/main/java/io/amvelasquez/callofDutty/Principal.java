@@ -11,7 +11,6 @@ public class Principal {
     public static void main(String[] args) {
 
 
-
         Bombardero bombardero = new Bombardero();
         Camionsuministro camionsuministro = new Camionsuministro();
         Crucero crucero = new Crucero();
@@ -32,8 +31,8 @@ public class Principal {
         allVehiculo.add(speedfigther);
         allVehiculo.add(tanquesherman);
 
-        for (Vehiculo vehiculo:allVehiculo){
-             System.out.println(vehiculo);
+        for (Vehiculo vehiculo : allVehiculo) {
+            System.out.println(vehiculo);
         }
 
         ArrayList<Atacable> vehiculosqueatacan = new ArrayList<Atacable>();
@@ -44,7 +43,7 @@ public class Principal {
         vehiculosqueatacan.add(tanquesherman);
 
 
-        for (Atacable vehiculo:vehiculosqueatacan){
+        for (Atacable vehiculo : vehiculosqueatacan) {
             vehiculo.doAtaque();
             System.out.println();
 
@@ -54,13 +53,21 @@ public class Principal {
         ametralladoras.add(jeep);
         ametralladoras.add(speedfigther);
 
-        for (Rafagable ametralladora:ametralladoras){
+        for (Rafagable ametralladora : ametralladoras) {
             ametralladora.doRafaga();
             System.out.println();
 
         }
 
+        ArrayList<Bombardeable> bombarderos = new ArrayList<Bombardeable>();
+        bombarderos.add(bombardero);
+
+
+        for (Bombardeable bombarde : bombarderos) {
+            bombarde.doBombardear();
+            System.out.println();
+
+        }
 
     }
-
 }
