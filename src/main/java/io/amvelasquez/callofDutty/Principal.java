@@ -83,9 +83,6 @@ public class Principal {
         for (Laserable laserr:laser){
             laserr.doLaser();
             System.out.println();
-
         }
-
-
     }
 }
